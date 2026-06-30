@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Elegant White Planter | Nature Alive Artistry</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div class="cart-icon" onclick="toggleCart()">
+🛒 <span id="cart-count">0</span>
+</div>
+
+<div class="logo">
+<img src="/logo.png" alt="Logo">
+<h2>Nature Alive Artistry</h2>
+</div>
+
+<nav id="menu">
+
+<a href="index.html">🏠 Home</a>
+
+<div class="submenu">
+
+<div class="submenu-title" onclick="toggleProducts()">
+📦 Products ▼
+</div>
+
+<div id="productsMenu" class="submenu-items">
+
+<a href="planters.html">🌿 Handmade Planters</a>
+<a href="giftsets.html">🎁 Premium Gift Sets</a>
+<a href="concrete.html">🪨 Concrete Art</a>
+<a href="custom.html">✨ Customized Orders</a>
+
+</div>
+
+</div>
+
+<a href="index.html#gallery">🖼 Gallery</a>
+<a href="index.html#contact">📞 Contact</a>
+
+</nav>
+
+</header>
+
+<!-- SHOPPING CART -->
+
+<div id="cart" class="cart">
+
+<div class="cart-header">
+<h2>🛒 Shopping Cart</h2>
+<span class="close-cart" onclick="toggleCart()">✖</span>
+</div>
+
+<div id="cart-items">
+<p>Your cart is empty.</p>
+</div>
+
+<div class="cart-footer">
+
+<h3>Total : ₹<span id="total">0</span></h3>
+
+<button class="btn"
+onclick="sendWhatsAppOrder()">
+Order on WhatsApp
+</button>
+
+</div>
+
+</div>
+
+<!-- PRODUCT -->
+
+<section class="product-details">
+
+<div class="product-left">
+
+<img src="/planter1.png"
+id="mainImage"
+class="main-image">
+
+<div class="thumbs">
+
+<img src="/planter1.png"
+onclick="changeImage(this.src)">
+
+<img src="/planter2.png"
+onclick="changeImage(this.src)">
+
+<img src="/planter3.png"
+onclick="changeImage(this.src)">
+
+</div>
+
+</div>
+
+<div class="product-right">
+
+<h1>Elegant White Planter</h1>
+
+<div class="offer-badge">
+🔥 20% OFF
+</div>
+
+<p class="stock-left">
+⚡ Hurry! Only 5 Pieces Left
+</p>
+
+<div class="rating">
+⭐⭐⭐⭐⭐ 4.9 (127 Reviews)
+</div>
+
+<h2 class="price">
+₹499 - ₹699
+</h2>
+
+<p class="stock">
+✅ In Stock
+</p>
+
+<p class="description">
+
+Premium handmade concrete planter.
+
+Perfect for indoor and outdoor decoration.
+
+</p>
+
+<h3>Highlights</h3>
+
+<ul>
+
+<li>✔ Handmade Premium Finish</li>
+
+<li>✔ Waterproof</li>
+
+<li>✔ Indoor & Outdoor</li>
+
+<li>✔ Eco Friendly</li>
+
+<li>✔ Long Lasting</li>
+
+</ul>
+
+<h3>Select Size</h3>
+
+<select>
+
+<option>Small</option>
+
+<option>Medium</option>
+
+<option>Large</option>
+
+</select>
+
+<br><br>
+
+<button class="cart-btn"
+
+onclick="addToCart('Elegant White Planter',499,'/planter1.png')">
+
+🛒 Add to Cart
+
+</button>
+
+<a href="https://wa.me/918827912333"
+
+class="btn">
+
+💬 Buy Now
+
+</a>
+
+<div class="product-actions">
+
+<button class="wishlist-btn"
+onclick="addToWishlist('Elegant White Planter')">
+❤️ Wishlist
+</button>
+
+<button class="share-btn"
+onclick="shareProduct()">
+📤 Share
+</button>
+
+</div>
+
+
+<!-- ==========================
+Customer Reviews
+========================== -->
+
+<section class="reviews">
+
+<h2>⭐ Customer Reviews</h2>
+
+<div class="review-container">
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<h4>Rahul Sharma</h4>
+<p>
+Excellent quality planter. Finish is premium and packing was very safe.
+</p>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐⭐
+<h4>Priya Verma</h4>
+<p>
+Looks beautiful in my living room. Worth every rupee.
+</p>
+</div>
+
+<div class="review-card">
+⭐⭐⭐⭐☆
+<h4>Amit Singh</h4>
+<p>
+Very good quality. Delivery was fast and product exactly matched the photos.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+Delivery Information
+========================== -->
+
+<section class="delivery">
+
+<h2>🚚 Delivery Information</h2>
+
+<ul>
+
+<li>📦 Dispatch within 1–2 Working Days</li>
+
+<li>🚚 PAN India Shipping Available</li>
+
+<li>🎁 Secure Premium Packaging</li>
+
+<li>🔄 Replacement Available for Damaged Products</li>
+
+</ul>
+
+</section>
+
+<!-- ==========================
+Related Products
+========================== -->
+
+<section class="products">
+
+<h2 class="section-title">
+🌿 You May Also Like
+</h2>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="/planter2.png">
+
+<h3>Leaf Texture Planter</h3>
+
+<p class="price">
+₹699 - ₹899
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Leaf Texture Planter',699,'/planter2.png')">
+🛒 Add to Cart
+</button>
+
+<button class="view-btn"
+onclick="window.location.href='product2.html'">
+👁 View Details
+</button>
+
+</div>
+
+<div class="product-card">
+
+<img src="/planter3.png">
+
+<h3>Luxury Concrete Planter</h3>
+
+<p class="price">
+₹899 - ₹1199
+</p>
+
+<button class="cart-btn"
+onclick="addToCart('Luxury Concrete Planter',899,'/planter3.png')">
+🛒 Add to Cart
+</button>
+
+<button class="view-btn"
+onclick="window.location.href='product3.html'">
+👁 View Details
+</button>
+
+</div>
+
+</div>
+
+</section>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
